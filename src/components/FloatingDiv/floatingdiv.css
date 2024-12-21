@@ -1,0 +1,44 @@
+.floatingDiv{
+    display: flex;
+    justify-content: space-evenly;
+    background: white;
+    box-shadow: var(--boxShadow);
+    border-radius: 1rem;
+    align-items: center;
+    padding: 0rem 1rem 0rem 0rem;
+    height: 4rem;
+    line-height: 1;
+    border: 1px solid var(--color-primary);
+}
+.floatingDiv>img{
+    width: 3rem;
+    aspect-ratio: 1;
+    padding: 2px 5px;
+    object-fit: contain;
+}
+.floatingDiv>span{
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    color: black;
+    font-weight: bold;
+    width: 80%;
+    text-overflow: inherit;
+}
+
+
+/* -------------------------MEDIA QUERIES (MEDIUM DIVICES)------------------------- */
+@media screen and (max-width:1024px){
+    .floatingDiv{
+        height: 3rem;
+    }
+}
+/* -------------------------MEDIA QUERIES (SMALL DIVICES)------------------------- */
+@media screen and (max-width:1024px){
+   .container.testimonials_container{
+    width: var(--container-width-sm);
+   }
+   .client_review{
+    width: var(--container-width-sm);
+   }
+}
+

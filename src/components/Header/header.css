@@ -1,0 +1,133 @@
+.header{
+    display: flex;
+    height: 500px;
+    padding-top: 3rem;
+    overflow: visible;
+    align-items: center;
+    justify-content: center;
+}
+.header-left{
+    display: flex;
+    position: relative;
+    flex:1; 
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    overflow-x: visible;
+    height: 100%;
+
+}
+.name{
+    display: flex;
+    flex-direction: column;
+}
+.name>:nth-child(1){
+    color: var(--black);
+    font-size: 1.6rem;
+}
+.name>:nth-child(2){
+    /* color: var(--color-primary); */
+    font-size: 1.9rem;
+}
+.name>:nth-child(3){
+    color: var(--gray);
+    font-weight: 100;
+    font-size: 1rem;
+    margin-top: 10px ;
+}
+b{
+    color: var(--color-primary);
+}
+.i-button{
+    width: 6rem;
+}
+.i-icons{
+    margin-top: 1rem;
+    display: flex;
+    gap: 0rem;
+}
+.i-icons>* {
+    transform: scale(0.5);
+}
+.social-icon-hover{
+    font-size: 4rem;
+    transform: translateY(10px);
+    transition: all  0.2s ease-in-out;
+    scale: 0.6;
+}
+.social-icon-hover:hover{
+    transform: translateY(0px);
+    box-shadow: 6px 9px 24px 2px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 6px 9px 24px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 9px 24px 2px rgba(0,0,0,0.75);
+
+}
+.header-right{
+    flex: 1;
+    position: relative;
+    border-radius: 10%;
+}
+ .header-right>*{
+    position: absolute;
+    z-index: 1; 
+} 
+.header-right>:nth-child(1){
+    position: relative;
+    align-items: center;
+    width: 70%;
+    transform: translateX(25%);
+    aspect-ratio: 1;
+    object-fit: contain;
+    
+}
+.header-right>:nth-child(2){
+    width: 5rem;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
+.header-right>:nth-child(3){
+    position: absolute;
+}
+.header-right>:nth-child(4){
+    position: absolute;
+}
+.blur{
+    position: absolute;
+    width: 22rem;
+    height: 14rem;
+    border-radius: 50%;
+    background: #edd0ff;
+    z-index: -9;
+    top: -18%;
+    left: 56%;
+    filter: blur(72px);
+}
+.ctn{
+    display: flex;
+    gap: 1rem;
+}
+
+/* -------------------------MEDIA QUERIES (SMALL DIVICES)------------------------- */
+@media screen and (max-width:780px){
+    HTML{
+        font-size: 80%;
+    }
+    .header-right>:nth-child(2){
+        scale: 0.6;
+    }
+}
+@media screen and (max-width:480px) {
+    .header{
+        margin-top: 12rem;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 6rem;
+    }
+    .header-right{
+        width: 90%;
+    }
+    .header-right{
+        margin-top: 1rem;
+    }
+}

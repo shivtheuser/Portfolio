@@ -1,0 +1,61 @@
+.project_container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+}
+.project_items{
+    background: var(--color-bg-variant);
+    padding: 0.5rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid var(--color-black);
+    overflow: hidden;
+}
+
+.project_items:hover{
+    border:2px  dashed var(--color-primary);
+    background: transparent;
+    box-shadow: -2px 13px 26px 3px rgba(0,0,0,0.79);
+-webkit-box-shadow: -2px 13px 26px 3px rgba(0,0,0,0.79);
+-moz-box-shadow: -2px 13px 26px 3px rgba(0,0,0,0.79);
+}
+.project_items:hover img{
+    transition: all 0.3s ease-in-out;
+    scale: 1.1;
+}
+
+.project_items-image{
+    border-radius: 1.5rem;
+    width: 100%;
+
+}
+
+.project_items h3{
+    margin: 1.2rem 0 2rem;
+}
+.project_item_CTA{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+/* -------------------------MEDIA QUERIES (MEDIUM DIVICES)------------------------- */
+@media screen and (max-width:1024px){
+    .project_container{
+        grid-template-columns: 1fr 1fr;
+        gap: 1.2rem;
+    }
+
+}
+/* -------------------------MEDIA QUERIES (SMALL DIVICES)------------------------- */
+@media screen and (max-width:720px){
+    .project_container{
+        grid-template-columns: 1fr ;
+        gap: 1rem;
+    }
+}
