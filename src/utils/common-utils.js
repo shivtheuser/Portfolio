@@ -184,22 +184,22 @@ export const testimonial_data=[
     },
     {
         avatar:userImg,
-        name:"Suhail Khan",
+        name:"Sushant Kumar",
         review:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad autem vero, cupiditate placeat ipsam vitae voluptatem iste fugit? Praesentium quia ex voluptatem, exercitationem consectetur nisi, inventore dicta, quidem eos perspiciatis minima.",
     },
     {
         avatar:userImg,
-        name:"arbazr Khan",
+        name:"Vaibhav Pal",
         review:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil illo ullam eligendi corporis? Doloribus necessitatibus numquam recusandae sed? Repellat odit pariatur distinctio, architecto amet corporis! Iste dolores vero recusandae pariatur harum ullam quos corporis, reiciendis ipsum.",
     },
     {
         avatar:userImg,
-        name:"neha Khan",
+        name:"Ritesh Kumar",
         review:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quas totam sit harum, eum provident officiis voluptates vero tempora asperiores fuga aspernatur animi recusandae beatae placeat rerum molestiae!",
     },
     {
         avatar:userImg,
-        name:"shaheen Khan",
+        name:"Satyam Pal",
         review:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, similique nihil? Voluptatem minima magnam natus, quo nulla saepe assumenda perspiciatis?",
     },
 ]
