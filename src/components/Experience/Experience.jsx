@@ -1,4 +1,4 @@
-import {React,useContext} from "react";
+import { React, useContext } from "react";
 import {
   experienceDataFrontend,
   experienceDataBackend,
@@ -7,12 +7,12 @@ import {
 import "./experience.css";
 import { themeContext } from "../../context";
 import { useState } from "react";
-import {motion} from "framer-motion";
+import { motion } from "framer-motion";
 
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/pagination';
-import { Pagination } from 'swiper/modules';
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import { Pagination } from "swiper/modules";
 
 const Experience = () => {
   const theme = useContext(themeContext);
@@ -31,12 +31,30 @@ const Experience = () => {
     }
   };
   return (
-    <div className="container" id="Experience" >
-      <h1 style={{ textAlign: "center",color:darkMode?"var(--color-primary-variant)":"" }}>My Experience</h1>
-      <div  className="experience-container " >
-        <motion.div initial={{left:"-40%"}} whileInView={{left:"0%"}} className="experience-left " style={{background:darkMode?"black":"",color:darkMode?"var(--color-white)":"",border:darkMode?"2px solid var(--color-white)":""}}>
-          <h3 style={{color:darkMode?"var(--color-primary-variant)":""}}>Frontend Development</h3>
-          <div className="experience-content" >
+    <div className="container" id="Experience">
+      <h1
+        style={{
+          textAlign: "center",
+          color: darkMode ? "var(--color-primary-variant)" : "",
+        }}
+      >
+        My Experience
+      </h1>
+      <div className="experience-container ">
+        <motion.div
+          initial={{ left: "-40%" }}
+          whileInView={{ left: "0%" }}
+          className="experience-left "
+          style={{
+            background: darkMode ? "black" : "",
+            color: darkMode ? "var(--color-white)" : "",
+            border: darkMode ? "2px solid var(--color-white)" : "",
+          }}
+        >
+          <h3 style={{ color: darkMode ? "var(--color-primary-variant)" : "" }}>
+            Frontend Development
+          </h3>
+          <div className="experience-content">
             {experienceDataFrontend.map((data) => (
               <article className="experience-details">
                 <img src={data.image} />
@@ -50,12 +68,28 @@ const Experience = () => {
             ))}
           </div>
         </motion.div>
-        <motion.div initial={{right:"-40%"}} whileInView={{right:"0%"}} className="experience-backend"  style={{background:darkMode?"black":"",color:darkMode?"var(--color-white)":"",border:darkMode?"2px solid var(--color-white)":""}} >
-          <h3 style={{color:darkMode?"var(--color-primary-variant)":""}}>Backend Development</h3>
-          <div className="experience-content" >
+        <motion.div
+          initial={{ right: "-40%" }}
+          whileInView={{ right: "0%" }}
+          className="experience-backend"
+          style={{
+            background: darkMode ? "black" : "",
+            color: darkMode ? "var(--color-white)" : "",
+            border: darkMode ? "2px solid var(--color-white)" : "",
+          }}
+        >
+          <h3 style={{ color: darkMode ? "var(--color-primary-variant)" : "" }}>
+            Backend Development
+          </h3>
+          <div className="experience-content">
             {experienceDataBackend.map((data) => (
               <article className="experience-details">
-                <motion.img initial={{bottom:"-20%"}} whileHover={{color:"red"}} transition={transition} src={data.image} />
+                <motion.img
+                  initial={{ bottom: "-20%" }}
+                  whileHover={{ color: "red" }}
+                  transition={transition}
+                  src={data.image}
+                />
                 <div>
                   <h4>{data.title}</h4>
                   <small className="text-light">
@@ -68,14 +102,29 @@ const Experience = () => {
         </motion.div>
       </div>
       <div className="other-section">
-        <h2 style={{ textAlign: "center",color:darkMode?"var(--color-primary-variant)":"" }}>Tools and Others</h2>
+        <h2
+          style={{
+            textAlign: "center",
+            color: darkMode ? "var(--color-primary-variant)" : "",
+          }}
+        >
+          Tools and Others
+        </h2>
         <div className="other-section-child">
           {experienceOtherData.map((data) => (
-            <motion.div style={{color:darkMode?"var(--color-primary-variant)":"",border:darkMode?"2px solid var(--color-primary-variant)":""}} initial={{scale:"0.5"}} whileInView={{scale:"1"}} transition={transition} className="">
-              <img
-                src={data.image}
-                alt=""
-              />
+            <motion.div
+              style={{
+                color: darkMode ? "var(--color-primary-variant)" : "",
+                border: darkMode
+                  ? "2px solid var(--color-primary-variant)"
+                  : "",
+              }}
+              initial={{ scale: "0.5" }}
+              whileInView={{ scale: "1" }}
+              transition={transition}
+              className=""
+            >
+              <img src={data.image} alt="" />
               <span>{data.title}</span>
             </motion.div>
           ))}
